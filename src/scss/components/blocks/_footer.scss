@@ -1,0 +1,37 @@
+.footer {
+  &__nav {
+    padding: 37px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__geo {
+    margin: 0 42px;
+    font-style: normal;
+  }
+
+  &__business {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__geo {
+      text-align: center;
+      margin: 0;
+    }
+
+    &__business {
+      margin: 20px 0 0;
+    }
+
+    &__tel {
+      margin: 0 0 20px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.header__tel {
+  margin-left: auto;
+}
+
+.header__wrapper {
+  background: var(--base-background-color)
+    url('../img/background-desktop@1x.jpg') no-repeat bottom right / cover;
+}
+
+@media (max-width: 1023px) {
+  .header__wrapper {
+    background-image: url('../img/background-tablet@1x.jpg');
+    background-position: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__tel {
+    margin-left: 0;
+  }
+
+  .header__wrapper {
+    background-image: url('../img/background-mobile@1x.jpg');
+    background-position: left;
+  }
+}

@@ -1,0 +1,43 @@
+.order {
+  &__wrapper {
+    background-color: #8d7370;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    display: inline-block;
+    text-align: left;
+    font-weight: normal;
+    color: #ffffff;
+    margin: 50px 0 0;
+  }
+
+  &__text {
+    color: rgba(#fff, 0.6);
+    margin: 24px 0 44px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .order {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      max-width: 60%;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .order {
+    &__text {
+      max-width: 80%;
+    }
+  }
+}

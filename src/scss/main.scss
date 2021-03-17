@@ -1,0 +1,29 @@
+/* Default */
+@import './mixins';
+@import './variables';
+@import './fonts';
+@import './settings';
+@import './utils';
+
+/* Other items */
+@import './components/buttons';
+@import './components/independent';
+@import './components/slider';
+
+/* Blocks */
+@import './components/blocks/header';
+@import './components/blocks/promo';
+@import './components/blocks/about';
+@import './components/blocks/projects';
+@import './components/blocks/team';
+@import './components/blocks/proccess';
+@import './components/blocks/reviews';
+@import './components/blocks/order';
+@import './components/blocks/footer';
+
+/* Elements */
+@import './components/elements/site-nav';
+@import './components/elements/about-list';
+@import './components/elements/project-item';
+@import './components/elements/review';
+@import './components/elements/form';

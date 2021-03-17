@@ -1,0 +1,42 @@
+.team {
+  padding-top: 0;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    margin: 10px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .team {
+    &__list {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scandi</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <nav class="site-nav">
+          <a href="#" class="logo">
+            <img src="./img/logo.svg"
+                 alt="Логотип студии дизайна интерьеров"
+                 class="logo__img"
+                 width="91"
+                 height="25">
+          </a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="#about" class="link site-nav__link">О компании</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#projects" class="link site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#team" class="link site-nav__link">Команда</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#proccess" class="link site-nav__link">Как мы работаем</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#reviews" class="link site-nav__link">Отзывы клиентов</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#order" class="link site-nav__link">Оставить заявку</a>
+            </li>
+          </ul>
+          <a href="tel:+79818574624" class="tel header__tel">+7 (981) 857-46-24</a>
+        </nav>
+      </div>
+      <section class="section promo">
+        <div class="container-small promo__wrapper">
+          <h2 class="promo__title">Поможем сделать вашу квартиру уютнее</h2>
+          <p class="text promo__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+          <a href="#order" class="btn-promo btn">Оставить заявку</a>
+        </div>
+      </section>
+    </div>
+  </header>
+  
+  <main class="main">
+    <h1 class="visually-hidden">Главная страница студии дизайна интерьеров Scandi</h1>
+
+    <section class="section about" id="about">
+      <h2 class="title about__title">О нас</h2>
+      <div class="container-small about__info">
+        <picture>
+          <source srcset="./img/about-us-mobile@1x.jpg 1x,
+                          ./img/about-us-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)">
+          <source srcset="./img/about-us-tablet@1x.jpg 1x,
+                          ./img/about-us-tablet@2x.jpg 2x"
+                  media="(max-width: 1023px)">
+          <img src="./img/about-us-desktop@1x.jpg"
+              srcset="./img/about-us-desktop@2x.jpg 2x"
+              alt="Накрытый стол в европейском стиле"
+              class="about__img"
+              width="445"
+              height="465">
+        </picture>
+        <div class="about__text-block">
+          <p class="text about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+          <p class="text about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: «Да! Это именно то, что действительно достойно моего дома!»</p>
+        </div>
+      </div> 
+        
+      <div class="about__wrapper">
+        <div class="container-small">
+          <dl class="about-list">
+            <div class="about-list__group">
+              <dt class="about-list__term">Лет опыта</dt>
+              <dd class="about-list__desc">5</dd>
+            </div>
+  
+            <div class="about-list__group">
+              <dt class="about-list__term">Проектов</dt>
+              <dd class="about-list__desc">100</dd>
+            </div>
+  
+            <div class="about-list__group">
+              <dt class="about-list__term">Наград</dt>
+              <dd class="about-list__desc">10</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="title projects__title">Наши работы</h2>
+
+        <ul class="projects__list">
+          <div class="projects__list-row">
+            <li class="projects__item">
+              <a href="#" class="projects__link">
+                <figure class="project-item">
+                  <img src="./img/projects/project-1.jpg"
+                       alt="Первый проект"
+                       class="project-item__img"
+                       width="488"
+                       height="451">
+                  <figcaption class="project-item__info">
+                    <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
+                    <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                  </figcaption>
+                </figure>
+              </a>  
+            </li>
+            <li class="projects__item">
+              <a href="#" class="projects__link">
+                <figure class="project-item">
+                  <img src="./img/projects/project-2.jpg"
+                     alt="Второй проект"
+                     class="project-item__img"
+                     width="692"
+                     height="451">
+                  <figcaption class="project-item__info">
+                    <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
+                    <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+
+          <div class="projects__list-row">
+            <li class="projects__item">
+              <a href="#" class="projects__link">
+                <figure class="project-item">
+                  <img src="./img/projects/project-3.jpg"
+                     alt="Третий проект"
+                     class="project-item__img"
+                     width="692"
+                     height="451">
+                  <figcaption class="project-item__info">
+                    <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
+                    <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="#" class="projects__link">
+                <figure class="project-item">
+                  <img src="./img/projects/project-4.jpg"
+                     alt="Четвертый проект"
+                     class="project-item__img"
+                     width="488"
+                     height="451">
+                  <figcaption class="project-item__info">
+                    <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
+                    <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+        </ul>
+        
+        <a href="#" class="link projects__more">
+          Смотреть еще
+          <svg class="projects__more-icon">
+            <use xlink:href="./img/sprite.svg#arrow-long"></use>
+          </svg>  
+        </a>
+      </div>
+    </section>
+
+    <div class="team-proccess-wrapper">
+      <section class="section team" id="team">
+        <div class="container-small">
+          <h2 class="title team__title">Команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <h3 class="visually-hidden">Главный дизайнер Маша</h3>
+              <p class="text team__text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
+              <img src="./img/team/team-1.jpg"
+                   alt="Фотография Маши"
+                   class="team__img"
+                   width="320"
+                   height="253">
+            </li>
+            <li class="team__item">
+              <h3 class="visually-hidden">Менеджер Саша</h3>
+              <p class="text team__text">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
+              <img src="./img/team/team-2.jpg"
+                   alt="Фотография Саши"
+                   class="team__img"
+                   width="320"
+                   height="253">
+            </li>
+            <li class="team__item">
+              <h3 class="visually-hidden">Дизайнер Катя</h3>
+              <p class="text team__text">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обсутроить дом так, чтобы вам понравилось.</p>
+              <img src="./img/team/team-3.jpg"
+                   alt="Фотография Кати"
+                   class="team__img"
+                   width="320"
+                   height="253">
+            </li>
+          </ul>
+        </div>
+      </section>
+  
+      <section class="section proccess" id="proccess">
+        <div class="proccess__wrapper">
+          <div class="container">
+            <h2 class="title proccess__title">Как мы работаем</h2>
+            <ol class="proccess__list">
+              <li class="proccess__item">
+                <p class="text proccess__text">Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем договор.</p>
+              </li>
+              <li class="proccess__item">
+                <p class="text proccess__text">Подбираем мебель, текстиль, аксессуры. Делаем 3D-визуализацию.</p>
+              </li>
+              <li class="proccess__item">
+                <p class="text proccess__text">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</p>
+              </li>
+              <li class="proccess__item">
+                <p class="text proccess__text">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section reviews" id="reviews">
+      <div class="container-small">
+        <h2 class="title reviews__title">Отзывы</h2>
+
+        <div class="slider__container">
+          <ul class="reviews__list slider__wrapper">
+            <div class="slider__track">
+              <li class="reviews__item slider__slide">
+                <blockquote class="review">
+                  <div class="review__text-group">
+                    <p class="text review__text">«Восторг! Спасибо за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                    <p class="text review__text">Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
+                    <p class="text review__text">Буду советовать и своим друзьям к вам обращаться!»</p>
+                    <cite class="text review__author">Анна Беловская</cite>
+                  </div>
+                  <div class="review__img-group">
+                    <img src="./img/reviews/review-1-1.jpg"
+                        alt="Фотография гостинной из отзыва Анны"
+                        class="review__img"
+                        width="407"
+                        height="272">
+                    <img src="./img/reviews/review-1-2.jpg"
+                        alt="Фотография кухни из отзыва Анны"
+                        class="review__img"
+                        width="407"
+                        height="272">
+                  </div>
+                </blockquote>
+              </li>
+              <li class="reviews__item slider__slide">
+                <blockquote class="review">
+                  <div class="review__text-group">
+                    <p class="text review__text">«Восторг! Спасибо за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                    <p class="text review__text">Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
+                    <p class="text review__text">Буду советовать и своим друзьям к вам обращаться!»</p>
+                    <cite class="text review__author">Анна Беловская</cite>
+                  </div>
+                  <div class="review__img-group">
+                    <img src="./img/reviews/review-1-1.jpg"
+                        alt="Фотография гостинной из отзыва Анны"
+                        class="review__img"
+                        width="407"
+                        height="272">
+                    <img src="./img/reviews/review-1-2.jpg"
+                        alt="Фотография кухни из отзыва Анны"
+                        class="review__img"
+                        width="407"
+                        height="272">
+                  </div>
+                </blockquote>
+              </li>
+              <li class="reviews__item slider__slide">
+                <blockquote class="review">
+                  <div class="review__text-group">
+                    <p class="text review__text">«Восторг! Спасибо за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                    <p class="text review__text">Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!</p>
+                    <p class="text review__text">Буду советовать и своим друзьям к вам обращаться!»</p>
+                    <cite class="text review__author">Анна Беловская</cite>
+                  </div>
+                  <div class="review__img-group">
+                    <img src="./img/reviews/review-1-1.jpg"
+                        alt="Фотография гостинной из отзыва Анны"
+                        class="review__img"
+                        width="407"
+                        height="272">
+                    <img src="./img/reviews/review-1-2.jpg"
+                        alt="Фотография кухни из отзыва Анны"
+                        class="review__img"
+                        width="407"
+                        height="272">
+                  </div>
+                </blockquote>
+              </li>
+            </div>
+          </ul>
+          
+          <button class="slider__btn slider__btn--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="slider__btn slider__btn--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section order" id="order">
+      <div class="order__wrapper">
+        <div class="container-nosym">
+          <div class="order__inner">
+            <div class="order__info">
+              <h2 class="title order__title">Оставить заявку</h2>
+              <p class="text order__text">Оставьте свои контакты. Менеджер перезвонит в удобное Вам время и ответит на все вопросы.</p>
+              <form action="#" class="form order__form">
+                <label class="form__label">
+                  <span class="visually-hidden">Ваше имя</span>
+                  <input type="text"
+                         name="name"
+                         class="form__input form__input--name"
+                         placeholder="Ваше имя"
+                         pattern="([А-ЯЁа-яё]{1,24}|[A-Za-z]{1,24})"
+                         required>
+                </label>
+      
+                <label class="form__label">
+                  <span class="visually-hidden">Ваш телефон</span>
+                  <input type="tel"
+                         name="tel"
+                         class="form__input form__input--tel"
+                         placeholder="Введите телефон"
+                         pattern="((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}"
+                         required>
+                </label>
+                
+                <button class="btn-submit btn form__btn" type="submit">Оставить заявку</button>
+              </form>
+            </div>
+            <div class="map">
+              <img src="./img/map.png"
+                   alt="Расположение студии Scandi на карте"
+                   class="map__img"
+                   width="590"
+                   height="624">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__nav">
+        <a href="tel:+79818574624" class="tel footer__tel">+7 (981) 857-46-24</a>
+        <address class="text footer__geo">г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
+        <p class="text footer__business">ИП Королёва А.А.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const sliderTrack = document.querySelector('.slider__track');
+    const sliderBtnPrev = document.querySelector('.slider__btn--prev');
+    const sliderBtnNext = document.querySelector('.slider__btn--next');
+
+    let slideWidth = sliderTrack.querySelector('.slider__slide').clientWidth;
+    const slideCount = sliderTrack.querySelectorAll('.slider__slide').length;
+
+    let currentPosition = 0;
+
+    const changeBtnState = () => {
+      sliderBtnPrev.disabled = (currentPosition === 0);
+      sliderBtnNext.disabled = (Math.abs(currentPosition) === (slideWidth * (slideCount - 1)));
+    }
+
+    const changeTrackState = () => sliderTrack.style = `transform: translateX(${currentPosition}px)`;
+    
+    const changeSliderState = () => {
+      changeBtnState();
+      changeTrackState();
+    }
+
+    sliderBtnPrev.addEventListener('click', () => {
+      currentPosition += slideWidth;
+      changeSliderState();
+    });
+
+    sliderBtnNext.addEventListener('click', () => {
+      currentPosition -= slideWidth;
+      changeSliderState();
+    });
+
+    changeSliderState();
+  </script>
+</body>
+</html>

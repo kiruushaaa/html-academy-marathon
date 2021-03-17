@@ -1,0 +1,110 @@
+.section {
+  padding-top: 65px;
+}
+
+.logo {
+  display: block;
+  flex-shrink: 0;
+  margin-right: 82px;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.link {
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.tel {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 20px;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.title {
+  margin: 0 0 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+}
+
+.text {
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+}
+
+.team-proccess-wrapper {
+  background-color: var(--wrapper-color-2);
+  margin-top: 65px;
+  padding: 50px 0 80px;
+}
+
+.map {
+  width: 100%;
+  max-width: 590px;
+  margin-left: 20px;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding-top: 50px;
+  }
+
+  .team-proccess-wrapper {
+    margin-top: 65px;
+  }
+
+  .map {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .tel {
+    margin-top: 20px;
+  }
+
+  .section {
+    padding-top: 20px;
+  }
+
+  .team-proccess-wrapper {
+    margin-top: 35px;
+  }
+}

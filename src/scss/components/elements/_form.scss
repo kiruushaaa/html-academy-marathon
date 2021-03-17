@@ -1,0 +1,24 @@
+.form {
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 0 35px;
+    padding: 0 0 4px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f6ede9;
+
+    &::placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      color: #f6ede9;
+    }
+  }
+}

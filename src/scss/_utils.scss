@@ -1,0 +1,42 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 20px;
+}
+
+.container-small {
+  margin: 0 auto;
+  max-width: 1156px;
+  padding: 0 60px;
+}
+
+.container-nosym {
+  margin: 0 auto;
+  max-width: 1312px;
+  padding: 0 20px 0 92px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+  .container-small {
+    padding: 0 15px;
+  }
+  .container-nosym {
+    padding: 0 10px 0 30px;
+  }
+}
