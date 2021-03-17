@@ -4,5 +4,5 @@ Thumbs.db
 *.sublime*
 .vscode
 *.log*
-node_modules/
-reports/
+node_modules
+reports
