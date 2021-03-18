@@ -59,6 +59,17 @@
       <h2 class="title about__title">О нас</h2>
       <div class="container-small about__info">
         <picture>
+          <source type="image/webp"
+                  srcset="./img/about-us-mobile@1x.webp 1x,
+                          ./img/about-us-mobile@2x.webp 2x"
+                  media="(max-width: 767px)">
+          <source type="image/webp"
+                  srcset="./img/about-us-tablet@1x.webp 1x,
+                          ./img/about-us-tablet@2x.webp 2x"
+                  media="(max-width: 1023px)">
+          <source type="image/webp"
+                  srcset="./img/about-us-desktop@1x.webp 1x,
+                          ./img/about-us-desktop@2x.webp 2x">
           <source srcset="./img/about-us-mobile@1x.jpg 1x,
                           ./img/about-us-mobile@2x.jpg 2x"
                   media="(max-width: 767px)">
@@ -66,11 +77,11 @@
                           ./img/about-us-tablet@2x.jpg 2x"
                   media="(max-width: 1023px)">
           <img src="./img/about-us-desktop@1x.jpg"
-              srcset="./img/about-us-desktop@2x.jpg 2x"
-              alt="Накрытый стол в европейском стиле"
-              class="about__img"
-              width="445"
-              height="465">
+               srcset="./img/about-us-desktop@2x.jpg 2x"
+               alt="Накрытый стол в европейском стиле"
+               class="about__img"
+               width="445"
+               height="465">
         </picture>
         <div class="about__text-block">
           <p class="text about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
@@ -189,7 +200,8 @@
             <li class="team__item">
               <h3 class="visually-hidden">Главный дизайнер Маша</h3>
               <p class="text team__text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
-              <img src="./img/team/team-1.jpg"
+              <img src="./img/team/team-1@1x.jpg"
+                   srcset="./img/team/team-1@2x.jpg 2x"
                    alt="Фотография Маши"
                    class="team__img"
                    width="320"
@@ -198,7 +210,8 @@
             <li class="team__item">
               <h3 class="visually-hidden">Менеджер Саша</h3>
               <p class="text team__text">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
-              <img src="./img/team/team-2.jpg"
+              <img src="./img/team/team-2@1x.jpg"
+                   srcset="./img/team/team-2@2x.jpg 2x"
                    alt="Фотография Саши"
                    class="team__img"
                    width="320"
@@ -207,7 +220,8 @@
             <li class="team__item">
               <h3 class="visually-hidden">Дизайнер Катя</h3>
               <p class="text team__text">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обсутроить дом так, чтобы вам понравилось.</p>
-              <img src="./img/team/team-3.jpg"
+              <img src="./img/team/team-3@1x.jpg"
+                   srcset="./img/team/team-3@2x.jpg 2x"
                    alt="Фотография Кати"
                    class="team__img"
                    width="320"
