@@ -30,10 +30,10 @@ const serve = (callback) => {
     )
   );
   gulp.watch(
-    './src/img/*.{jpg,jpeg,png,svg}',
+    './src/img/*.{jpg,jpeg,webp,png,svg}',
     gulp.series(images, readyReload)
   );
-  gulp.watch('./src/img/**/*.{jpg,jpeg,png}', gulp.series(images, readyReload));
+  gulp.watch('./src/img/**/*.{jpg,jpeg,webp,png}', gulp.series(images, readyReload));
   gulp.watch('./src/img/sprite/*.svg', gulp.series(svg, readyReload));
   gulp.watch('./src/*.html', gulp.series(html, readyReload));
 
