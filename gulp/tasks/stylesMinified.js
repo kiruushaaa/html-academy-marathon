@@ -10,6 +10,7 @@ const stylesMinified = () =>
     .pipe(
       autoprefixer({
         cascade: false,
+        grid: true,
       })
     )
     .pipe(

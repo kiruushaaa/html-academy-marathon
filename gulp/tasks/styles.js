@@ -20,10 +20,10 @@ const styles = () =>
     )
     .pipe(sourcemaps.init())
     .pipe(sass())
-    // .pipe(sass().on('error', sass.logError))
     .pipe(
       autoprefixer({
         cascade: false,
+        grid: true,
       })
     )
     .pipe(sourcemaps.write('.'))
