@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scandi</title>
   <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=40e30777-5d78-4790-ab50-bee88cf24458&lang=ru_RU"></script>
 </head>
 <body>
   <header class="header">
@@ -60,22 +61,8 @@
       <div class="container-small about__info">
         <picture>
           <source type="image/webp"
-                  srcset="./img/about-us-mobile@1x.webp 1x,
-                          ./img/about-us-mobile@2x.webp 2x"
-                  media="(max-width: 767px)">
-          <source type="image/webp"
-                  srcset="./img/about-us-tablet@1x.webp 1x,
-                          ./img/about-us-tablet@2x.webp 2x"
-                  media="(max-width: 1023px)">
-          <source type="image/webp"
                   srcset="./img/about-us-desktop@1x.webp 1x,
                           ./img/about-us-desktop@2x.webp 2x">
-          <source srcset="./img/about-us-mobile@1x.jpg 1x,
-                          ./img/about-us-mobile@2x.jpg 2x"
-                  media="(max-width: 767px)">
-          <source srcset="./img/about-us-tablet@1x.jpg 1x,
-                          ./img/about-us-tablet@2x.jpg 2x"
-                  media="(max-width: 1023px)">
           <img src="./img/about-us-desktop@1x.jpg"
                srcset="./img/about-us-desktop@2x.jpg 2x"
                alt="Накрытый стол в европейском стиле"
@@ -120,7 +107,8 @@
             <li class="projects__item">
               <a href="#" class="projects__link">
                 <figure class="project-item">
-                  <img src="./img/projects/project-1.jpg"
+                  <img src="./img/projects/project-1@1x.jpg"
+                       srcset="./img/projects/project-1@2x.jpg 2x"
                        alt="Первый проект"
                        class="project-item__img"
                        width="488"
@@ -135,11 +123,12 @@
             <li class="projects__item">
               <a href="#" class="projects__link">
                 <figure class="project-item">
-                  <img src="./img/projects/project-2.jpg"
-                     alt="Второй проект"
-                     class="project-item__img"
-                     width="692"
-                     height="451">
+                  <img src="./img/projects/project-2@1x.jpg"
+                       srcset="./img/projects/project-2@2x.jpg 2x"
+                       alt="Второй проект"
+                       class="project-item__img"
+                       width="692"
+                       height="451">
                   <figcaption class="project-item__info">
                     <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
                     <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
@@ -153,11 +142,12 @@
             <li class="projects__item">
               <a href="#" class="projects__link">
                 <figure class="project-item">
-                  <img src="./img/projects/project-3.jpg"
-                     alt="Третий проект"
-                     class="project-item__img"
-                     width="692"
-                     height="451">
+                  <img src="./img/projects/project-3@1x.jpg"
+                       srcset="./img/projects/project-3@2x.jpg 2x"
+                       alt="Третий проект"
+                       class="project-item__img"
+                       width="692"
+                       height="451">
                   <figcaption class="project-item__info">
                     <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
                     <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
@@ -168,11 +158,12 @@
             <li class="projects__item">
               <a href="#" class="projects__link">
                 <figure class="project-item">
-                  <img src="./img/projects/project-4.jpg"
-                     alt="Четвертый проект"
-                     class="project-item__img"
-                     width="488"
-                     height="451">
+                  <img src="./img/projects/project-4@1x.jpg"
+                       srcset="./img/projects/project-4@2x.jpg 2x"
+                       alt="Четвертый проект"
+                       class="project-item__img"
+                       width="488"
+                       height="451">
                   <figcaption class="project-item__info">
                     <h3 class="project-item__title">Квартира-студия 30 кв.м.</h3>
                     <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
@@ -270,16 +261,18 @@
                     <cite class="text review__author">Анна Беловская</cite>
                   </div>
                   <div class="review__img-group">
-                    <img src="./img/reviews/review-1-1.jpg"
-                        alt="Фотография гостинной из отзыва Анны"
-                        class="review__img"
-                        width="407"
-                        height="272">
-                    <img src="./img/reviews/review-1-2.jpg"
-                        alt="Фотография кухни из отзыва Анны"
-                        class="review__img"
-                        width="407"
-                        height="272">
+                    <img src="./img/reviews/review-1-1@1x.jpg"
+                         srcset="./img/reviews/review-1-1@2x.jpg 2x"
+                         alt="Фотография гостинной из отзыва Анны"
+                         class="review__img"
+                         width="407"
+                         height="272">
+                    <img src="./img/reviews/review-1-2@1x.jpg"
+                         srcset="./img/reviews/review-1-2@2x.jpg 2x"
+                         alt="Фотография кухни из отзыва Анны"
+                         class="review__img"
+                         width="407"
+                         height="272">
                   </div>
                 </blockquote>
               </li>
@@ -292,16 +285,18 @@
                     <cite class="text review__author">Анна Беловская</cite>
                   </div>
                   <div class="review__img-group">
-                    <img src="./img/reviews/review-1-1.jpg"
-                        alt="Фотография гостинной из отзыва Анны"
-                        class="review__img"
-                        width="407"
-                        height="272">
-                    <img src="./img/reviews/review-1-2.jpg"
-                        alt="Фотография кухни из отзыва Анны"
-                        class="review__img"
-                        width="407"
-                        height="272">
+                    <img src="./img/reviews/review-1-1@1x.jpg"
+                         srcset="./img/reviews/review-1-1@2x.jpg 2x"
+                         alt="Фотография гостинной из отзыва Анны"
+                         class="review__img"
+                         width="407"
+                         height="272">
+                    <img src="./img/reviews/review-1-2@1x.jpg"
+                         srcset="./img/reviews/review-1-2@2x.jpg 2x"
+                         alt="Фотография кухни из отзыва Анны"
+                         class="review__img"
+                         width="407"
+                         height="272">
                   </div>
                 </blockquote>
               </li>
@@ -314,16 +309,18 @@
                     <cite class="text review__author">Анна Беловская</cite>
                   </div>
                   <div class="review__img-group">
-                    <img src="./img/reviews/review-1-1.jpg"
-                        alt="Фотография гостинной из отзыва Анны"
-                        class="review__img"
-                        width="407"
-                        height="272">
-                    <img src="./img/reviews/review-1-2.jpg"
-                        alt="Фотография кухни из отзыва Анны"
-                        class="review__img"
-                        width="407"
-                        height="272">
+                    <img src="./img/reviews/review-1-1@1x.jpg"
+                         srcset="./img/reviews/review-1-1@2x.jpg 2x"
+                         alt="Фотография гостинной из отзыва Анны"
+                         class="review__img"
+                         width="407"
+                         height="272">
+                    <img src="./img/reviews/review-1-2@1x.jpg"
+                         srcset="./img/reviews/review-1-2@2x.jpg 2x"
+                         alt="Фотография кухни из отзыва Анны"
+                         class="review__img"
+                         width="407"
+                         height="272">
                   </div>
                 </blockquote>
               </li>
@@ -372,12 +369,8 @@
                 <button class="btn-submit btn form__btn" type="submit">Оставить заявку</button>
               </form>
             </div>
-            <div class="map">
-              <img src="./img/map.png"
-                   alt="Расположение студии Scandi на карте"
-                   class="map__img"
-                   width="590"
-                   height="624">
+            <div id="map" class="map">
+              <span class="visually-hidden">Местоположение студии Scandi на карте</span>
             </div>
           </div>
         </div>
@@ -427,6 +420,23 @@
     });
 
     changeSliderState();
+
+    ymaps.ready(init);
+    function init() {
+      const map = new ymaps.Map("map", {
+        center: [59.938419, 30.323559],
+        zoom: 18
+      });
+
+      const placemark = new ymaps.Placemark([59.938635, 30.323118], {
+        balloonContent: 'Студия дизайна интерьеров <strong>Scandi</strong></br>г. Санкт-петербург, ул. Большая Конюшенная, 19',
+        iconCaption: 'Большая Конюшенная ул., 19'
+      }, {
+        preset: 'islands#redDotIcon'
+      });
+      
+      map.geoObjects.add(placemark); 
+    }
   </script>
 </body>
 </html>
