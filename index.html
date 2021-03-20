@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scandi</title>
   <link rel="stylesheet" href="./styles/main.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=40e30777-5d78-4790-ab50-bee88cf24458&lang=ru_RU" async></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=40e30777-5d78-4790-ab50-bee88cf24458&lang=ru_RU"></script>
 </head>
 <body>
   <header class="header">
@@ -52,7 +52,7 @@
       </section>
     </div>
   </header>
-  
+
   <main class="main">
     <h1 class="visually-hidden">Главная страница студии дизайна интерьеров Scandi</h1>
 
@@ -74,8 +74,8 @@
           <p class="text about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
           <p class="text about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: «Да! Это именно то, что действительно достойно моего дома!»</p>
         </div>
-      </div> 
-        
+      </div>
+
       <div class="about__wrapper">
         <div class="container-small">
           <dl class="about-list">
@@ -83,12 +83,12 @@
               <dt class="about-list__term">Лет опыта</dt>
               <dd class="about-list__desc">5</dd>
             </div>
-  
+
             <div class="about-list__group">
               <dt class="about-list__term">Проектов</dt>
               <dd class="about-list__desc">100</dd>
             </div>
-  
+
             <div class="about-list__group">
               <dt class="about-list__term">Наград</dt>
               <dd class="about-list__desc">10</dd>
@@ -118,7 +118,7 @@
                     <p class="text project-item__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
                   </figcaption>
                 </figure>
-              </a>  
+              </a>
             </li>
             <li class="projects__item">
               <a href="#" class="projects__link">
@@ -173,12 +173,12 @@
             </li>
           </div>
         </ul>
-        
+
         <a href="#" class="link projects__more">
           Смотреть еще
           <svg class="projects__more-icon">
             <use xlink:href="./img/sprite.svg#arrow-long"></use>
-          </svg>  
+          </svg>
         </a>
       </div>
     </section>
@@ -221,7 +221,7 @@
           </ul>
         </div>
       </section>
-  
+
       <section class="section proccess" id="proccess">
         <div class="proccess__wrapper">
           <div class="container">
@@ -326,7 +326,7 @@
               </li>
             </div>
           </ul>
-          
+
           <button class="slider__btn slider__btn--prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
@@ -355,9 +355,9 @@
                          pattern="([А-ЯЁа-яё]{1,24}|[A-Za-z]{1,24})"
                          required>
                 </label>
-      
+
                 <label class="form__label">
-                  <span class="visually-hidden">Ваш телефон</span>
+                 <span class="visually-hidden">Ваш телефон</span>
                   <input type="tel"
                          name="tel"
                          class="form__input form__input--tel"
@@ -365,7 +365,7 @@
                          pattern="((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}"
                          required>
                 </label>
-                
+
                 <button class="btn-submit btn form__btn" type="submit">Оставить заявку</button>
               </form>
             </div>
@@ -387,56 +387,6 @@
     </div>
   </footer>
 
-  <script>
-    const sliderTrack = document.querySelector('.slider__track');
-    const sliderBtnPrev = document.querySelector('.slider__btn--prev');
-    const sliderBtnNext = document.querySelector('.slider__btn--next');
-
-    let slideWidth = sliderTrack.querySelector('.slider__slide').clientWidth;
-    const slideCount = sliderTrack.querySelectorAll('.slider__slide').length;
-
-    let currentPosition = 0;
-
-    const changeBtnState = () => {
-      sliderBtnPrev.disabled = (currentPosition === 0);
-      sliderBtnNext.disabled = (Math.abs(currentPosition) === (slideWidth * (slideCount - 1)));
-    }
-
-    const changeTrackState = () => sliderTrack.style = `transform: translateX(${currentPosition}px)`;
-    
-    const changeSliderState = () => {
-      changeBtnState();
-      changeTrackState();
-    }
-
-    sliderBtnPrev.addEventListener('click', () => {
-      currentPosition += slideWidth;
-      changeSliderState();
-    });
-
-    sliderBtnNext.addEventListener('click', () => {
-      currentPosition -= slideWidth;
-      changeSliderState();
-    });
-
-    changeSliderState();
-
-    ymaps.ready(init);
-    function init() {
-      const map = new ymaps.Map("map", {
-        center: [59.938419, 30.323559],
-        zoom: 18
-      });
-
-      const placemark = new ymaps.Placemark([59.938635, 30.323118], {
-        balloonContent: 'Студия дизайна интерьеров <strong>Scandi</strong></br>г. Санкт-петербург, ул. Большая Конюшенная, 19',
-        iconCaption: 'Большая Конюшенная ул., 19'
-      }, {
-        preset: 'islands#redDotIcon'
-      });
-      
-      map.geoObjects.add(placemark); 
-    }
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
