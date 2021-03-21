@@ -1,4 +1,9 @@
 .reviews {
+  &__inner {
+    padding: 0 101px;
+    position: relative;
+  }
+
   &__list {
     margin: 0;
     padding: 0;
@@ -7,5 +12,35 @@
 
   &__item {
     display: block;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+      background-image: url('../img/sprite.svg#arrow-short-next');
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    &__inner {
+      padding: 0;
+    }
+
+    &__btn {
+      width: 50px;
+      height: 50px;
+      top: -55px;
+      transform: none;
+    }
   }
 }

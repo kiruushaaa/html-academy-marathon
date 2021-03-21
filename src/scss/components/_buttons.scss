@@ -27,3 +27,54 @@
   border: none;
   margin: 0 0 50px;
 }
+
+.btn-arrow {
+  cursor: pointer;
+  display: block;
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  background: #cc8b86 url('../img/sprite.svg#arrow-short-prev') no-repeat center /
+    contain;
+  transition: opacity 100ms ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    cursor: unset;
+    background-color: #cccccc;
+  }
+}
+
+.to-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  transform: rotate(90deg);
+  width: 65px;
+  height: 65px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 200ms linear;
+
+  &--showed {
+    z-index: inherit;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .to-top {
+    width: 55px;
+    height: 55px;
+  }
+}

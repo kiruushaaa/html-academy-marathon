@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import eslint from 'gulp-eslint';
 import webpack from 'webpack-stream';
 import CircularDependencyPlugin from 'circular-dependency-plugin';
 import DuplicatePackageCheckerPlugin from 'duplicate-package-checker-webpack-plugin';
@@ -8,6 +9,8 @@ const scripts = () =>
   gulp
     .src('./src/js/script.js')
     .pipe(plumber())
+    .pipe(eslint())
+    .pipe(eslint.format())
     .pipe(
       webpack({
         mode: process.env.NODE_ENV,
