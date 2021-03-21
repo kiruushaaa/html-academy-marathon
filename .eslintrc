@@ -22,5 +22,5 @@
   },
   "globals": {
     "ymaps": "readonly"
-}
+  }
 }
