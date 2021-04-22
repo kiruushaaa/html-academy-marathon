@@ -1,48 +1,78 @@
 class Slider {
   constructor(container, settings) {
-    this.slider = document.querySelector(container);
-    this.track = this.slider.querySelector('.slider__track');
-    this.btnPrev = this.slider.querySelector(settings.btnPrev);
-    this.btnNext = this.slider.querySelector(settings.btnNext);
-
-    this.slideCount = this.track.querySelectorAll('.slider__slide').length;
-    this.slideWidth = this.track.clientWidth;
-
-    this.currentSlide = 0;
+    this._slider = document.querySelector(container);
+    this._track = this._slider.querySelector('.slider__track');
+    this._btnPrev = this._slider.querySelector(settings.btnPrev);
+    this._btnNext = this._slider.querySelector(settings.btnNext);
+    this._slidesCount = this._track.querySelectorAll('.slider__slide').length;
+    this._slideWidth = this._track.clientWidth;
+    this._currentSlideNumber = 0;
   }
 
-  changeTrackState() {
-    this.track.style.transform = `translateX(${
-      this.currentSlide * this.slideWidth * -1
+  getSlideWidth() {
+    return this._slideWidth;
+  }
+
+  getCurrentSlideNumber() {
+    return this._currentSlideNumber;
+  }
+
+  setSlideWidth(width) {
+    this._slideWidth = width;
+  }
+
+  setCurrentSlideNumber(number) {
+    this._currentSlideNumber = number;
+  }
+
+  _changeTrackPosition() {
+    this._track.style.transform = `translateX(${
+      this._currentSlideNumber * this._slideWidth * -1
     }px)`;
   }
 
-  changeBtnState() {
-    this.btnPrev.disabled = this.currentSlide === 0;
-    this.btnNext.disabled = this.currentSlide === this.slideCount - 1;
+  _changeBtnState() {
+    this._btnPrev.disabled = this._currentSlideNumber === 0;
+    this._btnNext.disabled = this._currentSlideNumber === this._slidesCount - 1;
+  }
+
+  _btnClickHandler(isPrev = false) {
+    isPrev ? this.prevSlide() : this.nextSlide();
+    this._changeBtnState();
+    this._changeTrackPosition();
+  }
+
+  _windowResizeHandler() {
+    this._slideWidth = this._track.clientWidth;
+    this._changeTrackPosition();
+  }
+
+  prevSlide() {
+    this.setCurrentSlideNumber(this.getCurrentSlideNumber() - 1);
+  }
+
+  nextSlide() {
+    this.setCurrentSlideNumber(this.getCurrentSlideNumber() + 1);
   }
 
   initEventListeners() {
-    this.btnPrev.addEventListener('click', () => this.btnClickHandler(true));
-    this.btnNext.addEventListener('click', () => this.btnClickHandler());
-    window.addEventListener('resize', this.windowResizeHandler.bind(this));
+    this._btnPrev.addEventListener('click', () => this._btnClickHandler(true));
+    this._btnNext.addEventListener('click', () => this._btnClickHandler());
+    window.addEventListener('resize', this._windowResizeHandler.bind(this));
   }
 
-  btnClickHandler(isPrev = false) {
-    isPrev ? this.currentSlide-- : this.currentSlide++;
-    this.changeBtnState();
-    this.changeTrackState();
-  }
-
-  windowResizeHandler() {
-    this.slideWidth = this.track.clientWidth;
-    this.changeTrackState();
+  removeEventListeners() {
+    this._btnPrev.removeEventListener('click', () =>
+      this._btnClickHandler(true)
+    );
+    this._btnNext.removeEventListener('click', () => this._btnClickHandler());
+    window.removeEventListener('resize', this._windowResizeHandler.bind(this));
   }
 
   init() {
     this.initEventListeners();
-    this.changeBtnState();
-    this.changeTrackState();
+    this._changeBtnState();
+    this._changeTrackPosition();
   }
 }
 
